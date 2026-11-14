@@ -111,23 +111,27 @@ body{overflow-x:hidden}
 }
 
 
+
 /* Newsletter Subscription Section */
 .newsletter-section {
     background: #F6F9FF;
     text-align: center;
-    padding: 25px 20px 50px;
+    padding: 25px 20px 40px;
+    margin: 0;
 }
 
 .newsletter-section h2 {
     color: #172B4D;
     font-size: 24px;
-    margin-bottom: 25px;
+    margin: 0 0 25px;
+    text-align: center;
 }
 
 .newsletter-section p {
     color: #52647A;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    text-align: center;
 }
 
 .newsletter-section iframe {
@@ -137,5 +141,5 @@ body{overflow-x:hidden}
     height: 450px;
     margin: 0 auto;
     border: none;
-    background: #FFFFFF;
+    background: transparent;
 }
