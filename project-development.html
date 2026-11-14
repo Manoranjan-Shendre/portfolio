@@ -1,17 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project Development & Team Collaboration | Manoranjan Shendre</title>
+<title>Project Development &amp; Team Collaboration | Manoranjan Shendre</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <header class="header">
 <nav class="nav container">
 <a class="logo" href="index.html">MS</a>
 <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
 <div class="nav-links">
 <a href="index.html">Home</a>
 <a href="about.html">About Me</a>
@@ -28,44 +31,50 @@
 
 <section class="page-hero container">
 <p class="eyebrow">PROJECT 06</p>
-<h1>Project Development & Team Collaboration</h1>
-<p class="wide-text">
-A hands-on engineering development experience focused on practical
-implementation, teamwork, technical learning and collaboration.
-</p>
+<h1>Project Development &amp; Team Collaboration</h1>
 </section>
 
 <section class="section container">
-<div class="detail">
 
-<div class="project-hero-image has-image">
-    <img src="images/project-team.jpg"
-         alt="Engineering team working together in the Idea Lab">
+<div class="project-detail-image">
+<img src="images/Project associates.jpg"
+     alt="Project development team at the Idea Lab">
 </div>
 
-<h2>Project Overview</h2>
+<div class="project-detail-content">
+
 <p>
-This project highlights practical engineering development and
-team collaboration through hands-on work in the Idea Lab.
-It reflects the process of sharing ideas, developing prototypes,
-solving technical challenges and learning through implementation.
+This project involved a hands-on engineering development session carried out in an <strong>Idea Lab</strong>.
+The work focused on practical implementation, experimentation, and understanding real-world engineering concepts.
+Our team worked together on hardware assembly, circuit connections, wiring, testing, and debugging.
+The experience helped us translate theoretical concepts into practical applications.
+Team collaboration improved our problem-solving, communication, and technical skills.
+The session provided valuable practical exposure to engineering tools, equipment, and systematic troubleshooting.
 </p>
 
-<h2>Activities</h2>
-<p>
-Practical prototyping, hardware development, testing, troubleshooting
-and collaborative engineering work.
-</p>
+<div class="project-info">
 
-<h2>Team Collaboration</h2>
-<p>
-Working together on engineering activities helped develop
-problem-solving abilities, technical knowledge and teamwork skills.
-</p>
+<div>
+<span class="eyebrow">CONTRIBUTORS</span>
+<p>Vikas, Shekhar, Manoranjan Shendre</p>
+</div>
 
-<a class="back" href="projects.html">← Back to Selected Projects</a>
+<div>
+<span class="eyebrow">GUIDED BY</span>
+<p>
+<a href="https://fabacademy.org/2025/labs/vigyanashram/students/ramesh-bommidi/about.html"
+target="_blank" rel="noopener noreferrer">Ramesh Bommidi Sir</a>
+</p>
+</div>
 
 </div>
+
+<p class="back-link">
+<a href="projects.html">← Back to Selected Projects</a>
+</p>
+
+</div>
+
 </section>
 
 </main>
@@ -78,13 +87,15 @@ problem-solving abilities, technical knowledge and teamwork skills.
 </footer>
 
 <script>
-const b=document.querySelector(".menu-toggle");
-const n=document.querySelector(".nav-links");
+const b=document.querySelector(".menu-toggle"),
+n=document.querySelector(".nav-links");
+
 if(b){
 b.addEventListener("click",()=>{
 const o=n.classList.toggle("open");
 b.setAttribute("aria-expanded",o);
 });
+
 n.querySelectorAll("a").forEach(a=>
 a.addEventListener("click",()=>n.classList.remove("open"))
 );
