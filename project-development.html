@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Development & Team Collaboration | Manoranjan Shendre</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+<nav class="nav container">
+<a class="logo" href="index.html">MS</a>
+<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="skills.html">Skills</a>
+<a class="active" href="projects.html">Selected Projects</a>
+<a href="education.html">Education</a>
+<a href="achievements.html">Achievements</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+</header>
+
+<main>
+
+<section class="page-hero container">
+<p class="eyebrow">PROJECT 06</p>
+<h1>Project Development & Team Collaboration</h1>
+<p class="wide-text">
+A hands-on engineering development experience focused on practical
+implementation, teamwork, technical learning and collaboration.
+</p>
+</section>
+
+<section class="section container">
+<div class="detail">
+
+<div class="project-hero-image">
+<img src="images/project-team.jpg"
+alt="Engineering team working together in the Idea Lab"
+style="width:100%;height:100%;object-fit:contain;">
+</div>
+
+<h2>Project Overview</h2>
+<p>
+This project highlights practical engineering development and
+team collaboration through hands-on work in the Idea Lab.
+It reflects the process of sharing ideas, developing prototypes,
+solving technical challenges and learning through implementation.
+</p>
+
+<h2>Activities</h2>
+<p>
+Practical prototyping, hardware development, testing, troubleshooting
+and collaborative engineering work.
+</p>
+
+<h2>Team Collaboration</h2>
+<p>
+Working together on engineering activities helped develop
+problem-solving abilities, technical knowledge and teamwork skills.
+</p>
+
+<a class="back" href="projects.html">← Back to Selected Projects</a>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container footer">
+<strong>MS</strong>
+<span>© 2026 Manoranjan Shendre</span>
+</div>
+</footer>
+
+<script>
+const b=document.querySelector(".menu-toggle");
+const n=document.querySelector(".nav-links");
+if(b){
+b.addEventListener("click",()=>{
+const o=n.classList.toggle("open");
+b.setAttribute("aria-expanded",o);
+});
+n.querySelectorAll("a").forEach(a=>
+a.addEventListener("click",()=>n.classList.remove("open"))
+);
+}
+</script>
+
+</body>
+</html>
